@@ -7,9 +7,11 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, Storyboarded {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    weak var coordinator: MainCoordinator?
     
     var tvShows: [TVShow] = [] {
         didSet {
@@ -37,17 +39,9 @@ class MainViewController: UIViewController {
     }
 
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showFavorites" {
-            let controller = segue.destination as! FavoritesViewController
-            controller.favoritesTvShows = favoritesTvShows
-        }
-    }
     
     @IBAction func listFavorites(_ sender: Any) {
-        
-        performSegue(withIdentifier: "showFavorites", sender: self)
-        
+        coordinator?.favorites(to: favoritesTvShows)
     }
 }
 

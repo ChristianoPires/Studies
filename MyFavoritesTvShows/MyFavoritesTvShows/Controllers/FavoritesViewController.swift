@@ -7,9 +7,11 @@
 
 import UIKit
 
-class FavoritesViewController : UIViewController {
+class FavoritesViewController : UIViewController, Storyboarded {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    weak var coordinator: MainCoordinator?
     
     var favoritesTvShows: [TVShow] = []
     

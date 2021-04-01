@@ -12,6 +12,9 @@
 		6B25CAD3258EA42C00BB977A /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25CAD2258EA42C00BB977A /* Genres.swift */; };
 		6B25CADB258EA48D00BB977A /* TVShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25CADA258EA48D00BB977A /* TVShows.swift */; };
 		6B25CAE5258EA5C900BB977A /* ServicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B25CAE4258EA5C900BB977A /* ServicesController.swift */; };
+		6B28571D2614F7B4007DEA8D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B28571C2614F7B4007DEA8D /* Coordinator.swift */; };
+		6B2857252614F87E007DEA8D /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2857242614F87E007DEA8D /* Storyboarded.swift */; };
+		6B28572A2614FBD1007DEA8D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2857292614FBD1007DEA8D /* MainCoordinator.swift */; };
 		6B5FE8BB258FC528000160F8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5FE8BA258FC528000160F8 /* TableViewCell.swift */; };
 		6B7CFAFB258E9D360096F618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7CFAFA258E9D360096F618 /* AppDelegate.swift */; };
 		6B7CFAFD258E9D360096F618 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7CFAFC258E9D360096F618 /* SceneDelegate.swift */; };
@@ -46,6 +49,9 @@
 		6B25CAD2258EA42C00BB977A /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 		6B25CADA258EA48D00BB977A /* TVShows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShows.swift; sourceTree = "<group>"; };
 		6B25CAE4258EA5C900BB977A /* ServicesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesController.swift; sourceTree = "<group>"; };
+		6B28571C2614F7B4007DEA8D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6B2857242614F87E007DEA8D /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		6B2857292614FBD1007DEA8D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		6B5FE8BA258FC528000160F8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		6B7CFAF7258E9D360096F618 /* MyFavoritesTvShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFavoritesTvShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B7CFAFA258E9D360096F618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +123,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		6B28571B2614F764007DEA8D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6B28571C2614F7B4007DEA8D /* Coordinator.swift */,
+				6B2857242614F87E007DEA8D /* Storyboarded.swift */,
+				6B2857292614FBD1007DEA8D /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		6B5FE8B9258FC4AD000160F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +164,7 @@
 		6B7CFAF9258E9D360096F618 /* MyFavoritesTvShows */ = {
 			isa = PBXGroup;
 			children = (
+				6B28571B2614F764007DEA8D /* Coordinator */,
 				6B5FE8B9258FC4AD000160F8 /* Views */,
 				6B25CAE3258EA52A00BB977A /* Controllers */,
 				6B25CAE2258EA51D00BB977A /* Delegates */,
@@ -309,11 +326,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B25CADB258EA48D00BB977A /* TVShows.swift in Sources */,
+				6B28572A2614FBD1007DEA8D /* MainCoordinator.swift in Sources */,
 				6B21B5FD25928ED300F1B241 /* FavoritesViewController.swift in Sources */,
+				6B28571D2614F7B4007DEA8D /* Coordinator.swift in Sources */,
 				6B25CAE5258EA5C900BB977A /* ServicesController.swift in Sources */,
 				6B7CFAFF258E9D360096F618 /* MainViewController.swift in Sources */,
 				6B7CFAFB258E9D360096F618 /* AppDelegate.swift in Sources */,
 				6B7CFAFD258E9D360096F618 /* SceneDelegate.swift in Sources */,
+				6B2857252614F87E007DEA8D /* Storyboarded.swift in Sources */,
 				6B21B5F32590EE9500F1B241 /* MultiTapped.swift in Sources */,
 				6B5FE8BB258FC528000160F8 /* TableViewCell.swift in Sources */,
 				6B25CAD3258EA42C00BB977A /* Genres.swift in Sources */,
